@@ -18,11 +18,10 @@ def timer(message=None):
 
 
 def happy_ticket_check(ticket_number: str) -> bool:
-    # Функція перевіряє значення (щасливий білет чи ні)
     number = [int(i) for i in ticket_number]
     first_part = number[:len(number) // 2]
     second_part = number[len(number) // 2:]
-    return sum(first_part) == sum(second_part)  # Повертає True якщо білетик щасливий
+    return sum(first_part) == sum(second_part)
 
 
 def happy_tickets_count(ticket_number_range: int):
